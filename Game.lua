@@ -1,3 +1,1 @@
-while true do
-  os.execute("clear")
-end
+os.execute("clear")
