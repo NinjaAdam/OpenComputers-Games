@@ -7,3 +7,4 @@ os.execute("clear")
 --end
 
 print("Hi")
+print("Ooook?")
