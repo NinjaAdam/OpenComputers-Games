@@ -6,5 +6,6 @@ os.execute("clear")
     --print()
 --end
 
-print("Hi")
-print("Ooook?")
+while true do
+    print("Test")
+end
