@@ -13,3 +13,5 @@ while true do
     
     component.gpu.set(x, y, "X")
 end
+
+--Game
