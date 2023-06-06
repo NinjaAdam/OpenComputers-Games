@@ -7,5 +7,10 @@ local component = require("component")
 
 while true do
     local _,_,x,y = event.pull("touch")
-    component.gpu.set(x, y, "X")
+    
+    if event.pull("touch") then
+        component.gpu.set(x, y, "X")
+        os.sleep(1)
+        os.execute("clear")
+    end
 end
