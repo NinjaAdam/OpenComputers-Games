@@ -1,11 +1,11 @@
 os.execute("del Game.lua")
-
 os.execute("clear")
 
---for i = 1, 255 do
-    --print()
---end
+
+local event = require("event")
+local component = require("component")
 
 while true do
-    print("Test")
+    local _,_,x,y = event.pull("touch")
+    component.gpu.set(x, y, "X")
 end
