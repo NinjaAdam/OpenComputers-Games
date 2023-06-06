@@ -1,7 +1,3 @@
-if not os.execute("clear") then
-    os.execute("cls")
-elseif not os.execute("cls") then
-    for i = 1,25 do
-        print("\n\n")
-    end
+for i = 1, 255 do
+    print()
 end
