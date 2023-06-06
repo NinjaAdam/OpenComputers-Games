@@ -12,7 +12,6 @@ while true do
     local _,_,mx,my = event.pull("touch")
     
     component.gpu.set(x, y, "X")
-    
 end
 
 --Game
