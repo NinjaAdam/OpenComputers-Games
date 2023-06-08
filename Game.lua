@@ -10,7 +10,7 @@ local y = math.random(1,50)
 
 end == false
 
-while x<130 or end == false do
+while x<130 or endG == false do
     local _,_,mx,my = event.pull("touch")
     os.execute("clear")
     component.gpu.set(x, y, "X")
@@ -18,7 +18,7 @@ while x<130 or end == false do
     x = x+0.25
 
     if x == mx and y == my do
-        end = true
+        endG = true
     end
 end
 
