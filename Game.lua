@@ -17,7 +17,7 @@ while x<130 or endG == false do
     
     x = x+0.25
 
-    if x == mx and y == my do
+    if x == mx and y == my then
         endG = true
     end
 end
