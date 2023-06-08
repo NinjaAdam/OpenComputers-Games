@@ -8,7 +8,7 @@ local component = require("component")
 local x = 1
 local y = math.random(1,50)
 
-end == false
+endG == false
 
 while x<130 or endG == false do
     local _,_,mx,my = event.pull("touch")
@@ -23,5 +23,5 @@ while x<130 or endG == false do
 end
 
 
-end = false
+endG = false
 os.execute("clear")
