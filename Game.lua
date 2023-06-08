@@ -8,10 +8,12 @@ local component = require("component")
 local x = 1
 local y = math.random(1,50)
 
-while x<100 do
-    --local _,_,mx,my = event.pull("touch")
+while x<130 or x == mx and y == my do
+    local _,_,mx,my = event.pull("touch")
     os.execute("clear")
     component.gpu.set(x, y, "X")
     
     x = x+0.25
 end
+
+os.execute("clear")
