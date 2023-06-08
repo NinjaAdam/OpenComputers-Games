@@ -15,5 +15,3 @@ while true do
     
     x = x+0.001
 end
-
---Game
