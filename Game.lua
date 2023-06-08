@@ -10,6 +10,7 @@ local y = 5 --math.random(1,10)
 
 while true do
     --local _,_,mx,my = event.pull("touch")
+    os.execute("clear")
     component.gpu.set(x, y, "X")
     
     x = x+0.001
