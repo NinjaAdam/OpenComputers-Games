@@ -6,7 +6,7 @@ local accessToken = io.read()
 
 local repositoryOwner = "NinjaAdam"
 local repositoryName = "OpenComputers-Games"
-local filePath = io.read()..".lua"
+local filePath = "test.lua"
 local fileContent = "Content of your file"
 
 local apiUrl = "https://api.github.com/repos/" .. repositoryOwner .. "/" .. repositoryName .. "/contents/" .. filePath
