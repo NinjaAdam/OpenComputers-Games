@@ -1,5 +1,5 @@
 local internet = require("internet")
---local json = require("json")
+local json = require("json")
 
 print("Enter your GitHub access token:")
 local accessToken = io.read()
