@@ -1,0 +1,26 @@
+local internet = require("internet")
+local json = require("json")
+
+print("Enter your GitHub access token:")
+local accessToken = io.read()
+
+local repositoryOwner = "NinjaAdam"
+local repositoryName = "OpenComputers-Games"
+local filePath = ""
+local fileContent = "Content of your file"
+
+local apiUrl = "https://api.github.com/repos/" .. repositoryOwner .. "/" .. repositoryName .. "/contents/" .. filePath
+local requestData = {
+  path = filePath,
+  message = "Add new file",
+  content = tostring(internet.base64Encode(fileContent)),
+  branch = "main"  -- Replace with your branch name if necessary
+}
+
+local requestHeaders = {
+  ["Authorization"] = "token " .. accessToken,
+  ["Content-Type"] = "application/json",
+  ["User-Agent"] = "OpenComputers"
+}
+
+internet.request(apiUrl, json.encode(requestData), requestHeaders)
